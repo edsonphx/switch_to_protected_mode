@@ -64,16 +64,16 @@ rm_continue_message:
 ;	GDT_entry_descriptor[] descriptors;
 ;}
 GDT_start:
-	;	struct GDT_entry_descriptor
-	;	{
-	;		uint16_t    limit0;
-	;		uint16_t    base0;
-	;		uint8_t     base1;
-	;		uint8_t	    access_byte;
-	;		uint8_t	    limit1 : 4;
-	;		uint8_t	    flags  : 4;
-	;		uint8_t	    base2;
-	;	}
+;	struct GDT_entry_descriptor
+;	{
+;		uint16_t    limit0;
+;		uint16_t    base0;
+;		uint8_t     base1;
+;		uint8_t	    access_byte;
+;		uint8_t	    limit1 : 4;
+;		uint8_t	    flags  : 4;
+;		uint8_t	    base2;
+;	}
     null_descriptor:
         dd 0x0
         dd 0x0
