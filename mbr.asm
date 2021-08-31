@@ -61,7 +61,7 @@ rm_continue_message:
 
 ;struct GDT
 ;{
-;	GDT_entry_descriptor null_descriptor;
+;   GDT_entry_descriptor null_descriptor;
 ;   GDT_entry_descriptor code_descriptor;
 ;   GDT_entry_descriptor data_descriptor;
 ;}
