@@ -12,7 +12,8 @@
 CODE_SEG equ code_descriptor - GDT_start
 DATA_SEG equ data_descriptor - GDT_start
 
-NEW_LINE equ 0x0a0d
+NEW_LINE equ 0x0a
+CARRIAGE_RETURN equ 0x0d
 NULL_CHAR equ 0x00
 
 VIDEO_MEM_ADDRESS equ 0xb8000
@@ -57,7 +58,7 @@ rm_exit_print:
 rm_welcome_message:
     db NEW_LINE, "Welcome to real mode!", NULL_CHAR
 rm_continue_message:
-    db NEW_LINE, "Press any key to switch to protected mode...", NULL_CHAR
+    db CARRIAGE_RETURN, NEW_LINE, "Press any key to switch to protected mode...", NULL_CHAR
 
 ;struct GDT
 ;{
