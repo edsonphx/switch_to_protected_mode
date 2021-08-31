@@ -117,7 +117,7 @@ start_protected_mode:
 ; void pm_clear()
 pm_clear_screen: 
     xor ebx, ebx    ; ebx = counter
-    mov al, 0x20    ; al = ' ';
+    mov al, 0x20    ; al = ' '
 
 pm_clear_screen_loop:
     cmp ebx, 80 * 25    ; 80 characters per line
