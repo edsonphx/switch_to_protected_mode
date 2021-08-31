@@ -97,7 +97,7 @@ GDT_end:
 
 ;struct GDT_descriptor
 ;{
-;	uint16_t size;
+;   uint16_t size;
 ;   GDT* GDT_memory_address; 
 ;}
 GDT_descriptor:
