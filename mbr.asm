@@ -155,8 +155,8 @@ pm_print_loop:
 
     mov [ecx], ax       ; VIDEO_MEM_ADDRESS + (counter * 2)
 
-    inc ebx             ; counter++
-    inc edx             ; str_address++
+    inc ebx             ; str_address++
+    inc edx             ; counter++
     jmp pm_print_loop
 pm_exit_print:
     ret
